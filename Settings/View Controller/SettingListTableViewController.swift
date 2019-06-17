@@ -36,9 +36,25 @@ class SettingListTableViewController: UITableViewController {
         
         // Configure the cell...
         let setting = SettingController.sharedInstance.settings[indexPath.row]
+        cell.cellDelegate = self
         cell.updateViews(with: setting)
-        
 
         return cell
     }
+} //end of class
+
+extension SettingListTableViewController: SettingCellDelegate {
+    func settingSwtichTapped(for cell: SettingTableViewCell) {
+        // Find the index path for the cell
+        guard let indexPath = tableView.indexPath(for: cell) else {return}
+        // using that index path - find the setting
+        let setting = SettingController.sharedInstance.settings[indexPath.row]
+        // toggle the isOn for that string
+        
+        SettingController.sharedInstance.toggleIsOn(for: setting)
+        // Updates the cells views
+        cell.updateViews(with: setting)
+    }
+    
+    
 }
