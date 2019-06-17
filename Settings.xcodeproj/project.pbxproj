@@ -60,11 +60,11 @@
 		A44D6D5322B7F4CA0019B112 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				A44D6D6622B7F9FA0019B112 /* Resources */,
 				A44D6D6F22B7FC5B0019B112 /* Model */,
 				A44D6D7322B7FCDB0019B112 /* View */,
 				A44D6D7222B7FC8C0019B112 /* Contoller */,
 				A44D6D6C22B7FC3E0019B112 /* Custom Views */,
-				A44D6D6622B7F9FA0019B112 /* Resources */,
 				A44D6D6922B7FBF90019B112 /* View Controller */,
 			);
 			path = Settings;
