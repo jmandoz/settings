@@ -63,9 +63,7 @@
 				A44D6D6622B7F9FA0019B112 /* Resources */,
 				A44D6D6F22B7FC5B0019B112 /* Model */,
 				A44D6D7322B7FCDB0019B112 /* View */,
-				A44D6D7222B7FC8C0019B112 /* Contoller */,
-				A44D6D6C22B7FC3E0019B112 /* Custom Views */,
-				A44D6D6922B7FBF90019B112 /* View Controller */,
+				A44D6D7422B802CF0019B112 /* Controller */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -86,7 +84,8 @@
 			children = (
 				A44D6D6722B7FBF30019B112 /* SettingListTableViewController.swift */,
 			);
-			path = "View Controller";
+			name = "View Controller";
+			path = "../View Controller";
 			sourceTree = "<group>";
 		};
 		A44D6D6C22B7FC3E0019B112 /* Custom Views */ = {
@@ -105,20 +104,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A44D6D7222B7FC8C0019B112 /* Contoller */ = {
+		A44D6D7222B7FC8C0019B112 /* Model Contoller */ = {
 			isa = PBXGroup;
 			children = (
 				A44D6D7022B7FC6F0019B112 /* SettingController.swift */,
 			);
-			path = Contoller;
+			name = "Model Contoller";
+			path = "../Model Contoller";
 			sourceTree = "<group>";
 		};
 		A44D6D7322B7FCDB0019B112 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A44D6D6C22B7FC3E0019B112 /* Custom Views */,
 				A44D6D5822B7F4CA0019B112 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A44D6D7422B802CF0019B112 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A44D6D7222B7FC8C0019B112 /* Model Contoller */,
+				A44D6D6922B7FBF90019B112 /* View Controller */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
