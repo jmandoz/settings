@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A44D6D5522B7F4CA0019B112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6D5422B7F4CA0019B112 /* AppDelegate.swift */; };
-		A44D6D5722B7F4CA0019B112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6D5622B7F4CA0019B112 /* ViewController.swift */; };
 		A44D6D5A22B7F4CA0019B112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44D6D5822B7F4CA0019B112 /* Main.storyboard */; };
 		A44D6D5C22B7F4CC0019B112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44D6D5B22B7F4CC0019B112 /* Assets.xcassets */; };
 		A44D6D5F22B7F4CC0019B112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44D6D5D22B7F4CC0019B112 /* LaunchScreen.storyboard */; };
+		A44D6D6822B7FBF30019B112 /* SettingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6D6722B7FBF30019B112 /* SettingListTableViewController.swift */; };
+		A44D6D6B22B7FC370019B112 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6D6A22B7FC370019B112 /* SettingTableViewCell.swift */; };
+		A44D6D6E22B7FC540019B112 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6D6D22B7FC540019B112 /* Setting.swift */; };
+		A44D6D7122B7FC6F0019B112 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6D7022B7FC6F0019B112 /* SettingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A44D6D5122B7F4CA0019B112 /* Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A44D6D5422B7F4CA0019B112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A44D6D5622B7F4CA0019B112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A44D6D5922B7F4CA0019B112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A44D6D5B22B7F4CC0019B112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A44D6D5E22B7F4CC0019B112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A44D6D6022B7F4CC0019B112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44D6D6722B7FBF30019B112 /* SettingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListTableViewController.swift; sourceTree = "<group>"; };
+		A44D6D6A22B7FC370019B112 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		A44D6D6D22B7FC540019B112 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		A44D6D7022B7FC6F0019B112 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		A44D6D5322B7F4CA0019B112 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				A44D6D6F22B7FC5B0019B112 /* Model */,
+				A44D6D7322B7FCDB0019B112 /* View */,
+				A44D6D7222B7FC8C0019B112 /* Contoller */,
+				A44D6D6C22B7FC3E0019B112 /* Custom Views */,
+				A44D6D6622B7F9FA0019B112 /* Resources */,
+				A44D6D6922B7FBF90019B112 /* View Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A44D6D6622B7F9FA0019B112 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A44D6D5422B7F4CA0019B112 /* AppDelegate.swift */,
-				A44D6D5622B7F4CA0019B112 /* ViewController.swift */,
-				A44D6D5822B7F4CA0019B112 /* Main.storyboard */,
 				A44D6D5B22B7F4CC0019B112 /* Assets.xcassets */,
 				A44D6D5D22B7F4CC0019B112 /* LaunchScreen.storyboard */,
 				A44D6D6022B7F4CC0019B112 /* Info.plist */,
 			);
-			path = Settings;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A44D6D6922B7FBF90019B112 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A44D6D6722B7FBF30019B112 /* SettingListTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A44D6D6C22B7FC3E0019B112 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A44D6D6A22B7FC370019B112 /* SettingTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		A44D6D6F22B7FC5B0019B112 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A44D6D6D22B7FC540019B112 /* Setting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A44D6D7222B7FC8C0019B112 /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				A44D6D7022B7FC6F0019B112 /* SettingController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		A44D6D7322B7FCDB0019B112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A44D6D5822B7F4CA0019B112 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44D6D5722B7F4CA0019B112 /* ViewController.swift in Sources */,
+				A44D6D7122B7FC6F0019B112 /* SettingController.swift in Sources */,
+				A44D6D6B22B7FC370019B112 /* SettingTableViewCell.swift in Sources */,
+				A44D6D6822B7FBF30019B112 /* SettingListTableViewController.swift in Sources */,
+				A44D6D6E22B7FC540019B112 /* Setting.swift in Sources */,
 				A44D6D5522B7F4CA0019B112 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +343,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Settings/Info.plist;
+				DEVELOPMENT_TEAM = 3ZLX8VSJT3;
+				INFOPLIST_FILE = "$(SRCROOT)/Settings/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +361,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Settings/Info.plist;
+				DEVELOPMENT_TEAM = 3ZLX8VSJT3;
+				INFOPLIST_FILE = "$(SRCROOT)/Settings/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
